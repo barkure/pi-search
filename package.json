@@ -1,0 +1,22 @@
+{
+  "name": "pi-search",
+  "version": "0.1.0",
+  "description": "Minimal Pi extension: web search and page reading with Exa and DeepSeek.",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "files": ["extensions", "lib", "README.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./extensions/index.ts"]
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}
